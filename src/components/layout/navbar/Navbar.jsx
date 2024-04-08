@@ -1,6 +1,6 @@
 import "./Navbar.css";
-import { AppBar, Box, Badge } from "@mui/material";
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import Cartwidget from "../../common/cartwidget/Cartwidget.jsx";
+import { AppBar, Box, Badge} from "@mui/material";
 
 
 export const Navbar = () => {
@@ -16,7 +16,7 @@ export const Navbar = () => {
           <li><a href="">Cuerdas</a></li>
           <li><a href="">Accesorios</a></li>
           <li><a href="">Estuches</a></li>
-         <li> <Badge badgeContent={0} color="primary" showZero={true}><AddShoppingCartIcon/></Badge></li>
+         <li><Badge badgeContent={0} color="primary" showZero={true}><Cartwidget/></Badge> </li>
         </ul>
       </AppBar>
     </Box>
